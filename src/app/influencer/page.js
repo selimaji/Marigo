@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import Heart from '@/components/Heart';
 import Category from "@/components/Category";
+import Image from "next/image";
 
 export default function Home() {
     const [isFavorite, setIsFavorite] = useState(false);
@@ -13,11 +14,11 @@ export default function Home() {
         <div className="relative max-w-3xl mx-auto md:p-10">
             <div className="mx-auto sm:px-6 lg:max-w-7xl lg:px-8">
                 <div className="h-1/4">
-                    <img
-                        src={'sara.svg'}
-                        alt={'sara'}
-                        className="h-full w-full object-cover object-right-top"
-                    />
+                    <Image src={`/sara.svg`}
+                           alt={'sara'}
+                           width="100" height="100"
+                           className="h-full w-full object-cover object-right-top" />
+
                 </div>
             </div>
 
