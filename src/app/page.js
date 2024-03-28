@@ -1,77 +1,11 @@
 'use client'
 import {useState} from 'react'
-import {Button} from "@/components/ui/button";
-
-const product = {
-    name: 'Basic Tee 6-Pack',
-    price: '$192',
-    href: '#',
-    breadcrumbs: [
-        {id: 1, name: 'Men', href: '#'},
-        {id: 2, name: 'Clothing', href: '#'},
-    ],
-    images: [
-        {
-            src: 'https://tailwindui.com/img/ecommerce-images/product-page-02-secondary-product-shot.jpg',
-            alt: 'Two each of gray, white, and black shirts laying flat.',
-        },
-        {
-            src: 'https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-01.jpg',
-            alt: 'Model wearing plain black basic tee.',
-        },
-        {
-            src: 'https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-02.jpg',
-            alt: 'Model wearing plain gray basic tee.',
-        },
-        {
-            src: 'https://tailwindui.com/img/ecommerce-images/product-page-02-featured-product-shot.jpg',
-            alt: 'Model wearing plain white basic tee.',
-        },
-    ],
-    colors: [
-        {name: 'White', class: 'bg-white', selectedClass: 'ring-gray-400'},
-        {name: 'Gray', class: 'bg-gray-200', selectedClass: 'ring-gray-400'},
-        {name: 'Black', class: 'bg-gray-900', selectedClass: 'ring-gray-900'},
-    ],
-    sizes: [
-        {name: 'XXS', inStock: false},
-        {name: 'XS', inStock: true},
-        {name: 'S', inStock: true},
-        {name: 'M', inStock: true},
-        {name: 'L', inStock: true},
-        {name: 'XL', inStock: true},
-        {name: '2XL', inStock: true},
-        {name: '3XL', inStock: true},
-    ],
-    description:
-        'The Basic Tee 6-Pack allows you to fully express your vibrant personality with three grayscale options. Feeling adventurous? Put on a heather gray tee. Want to be a trendsetter? Try our exclusive colorway: "Black". Need to add an extra pop of color to your outfit? Our white tee has you covered.',
-    highlights: [
-        'Hand cut and sewn locally',
-        'Dyed with our proprietary colors',
-        'Pre-washed & pre-shrunk',
-        'Ultra-soft 100% cotton',
-    ],
-    details:
-        'The 6-Pack includes two black, two white, and two heather gray Basic Tees. Sign up for our subscription service and be the first to get new, exciting colors, like our upcoming "Charcoal Gray" limited release.',
-}
-const reviews = {href: '#', average: 4, totalCount: 117}
-
-function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
-}
 
 export default function Home() {
-    const [selectedColor, setSelectedColor] = useState(product.colors[0])
-    const [selectedSize, setSelectedSize] = useState(product.sizes[2])
-
     const [isFavorite, setIsFavorite] = useState(false);
-
     const toggleFavorite = () => {
         setIsFavorite(!isFavorite);
     };
-
-    console.log(isFavorite)
-
 
     return (
         <div className="relative bg-[#E9ECEF] h-full">
@@ -80,14 +14,15 @@ export default function Home() {
                     <img
                         src={'sara.svg'}
                         alt={'sara'}
-                        className="max-h-[400px] w-full  object-cover object-right-top"
+                        className="max-h-[400px] w-full object-cover object-right-top"
                     />
                 </div>
             </div>
 
             <div className={'rounded-xl w-full bg-[#E9ECEF] absolute -mt-10 h-5/4'}>
                 <div className="mx-auto max-w-2xl p-8">
-                    <div className="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8 flex items-center justify-between">
+                    <div
+                        className="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8 flex items-center justify-between">
                         <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Sara Hoxha</h1>
                         <svg
                             width="20"
@@ -107,7 +42,7 @@ export default function Home() {
 
                     </div>
                 </div>
-                <div className={"mx-auto max-w-2xl p-8"}>
+                <div className={"mx-auto max-w-2xl pt-3 p-8"}>
                     <div className="flex items-center justify-between mb-2">
                         <p>Preloved items</p>
                         <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -118,18 +53,15 @@ export default function Home() {
                     </div>
                     <div className="flex justify-between  gap-2 ">
                         <img
-                            className=" w-1/3 h-[140px] "
-                            style={{objectFit: "cover"}}
+                            className=" w-1/3 h-[140px] object-cover"
                             src="rectangle-620.png"
                         />
                         <img
-                            className=" w-1/3 h-[140px] "
-                            style={{objectFit: "cover"}}
+                            className=" w-1/3 h-[140px] object-cover"
                             src="rectangle-630.png"
                         />
                         <img
-                            className="w-1/3 h-[140px] "
-                            style={{objectFit: "cover"}}
+                            className="w-1/3 h-[140px] object-cover"
                             src="rectangle-640.png"
                         />
                     </div>
@@ -145,18 +77,15 @@ export default function Home() {
                     </div>
                     <div className="flex justify-between  gap-2 ">
                         <img
-                            className=" w-1/3 h-[140px] "
-                            style={{objectFit: "cover"}}
+                            className=" w-1/3 h-[140px] object-cover"
                             src="rectangle-620.png"
                         />
                         <img
-                            className=" w-1/3 h-[140px] "
-                            style={{objectFit: "cover"}}
+                            className=" w-1/3 h-[140px] object-cover"
                             src="rectangle-630.png"
                         />
                         <img
-                            className="w-1/3 h-[140px] "
-                            style={{objectFit: "cover"}}
+                            className="w-1/3 h-[140px] object-cover"
                             src="rectangle-640.png"
                         />
                     </div>
