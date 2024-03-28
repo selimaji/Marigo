@@ -30,9 +30,9 @@ export default function Home() {
                     </div>
                 </div>
 
-                <Category title="Pants" href={"/influencer/"} />
-                <Category title="Blazzers" href={"/influencer/"}/>
-                <Category title="Skirts" href={"/influencer/"} />
+                <Category title="Pants" href={"/influencer/category/products"}/>
+                <Category title="Blazzers" href={"/influencer/category/products"}/>
+                <Category title="Skirts" href={"/influencer/category/products"}/>
             </div>
         </div>
     )
