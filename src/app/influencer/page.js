@@ -9,21 +9,20 @@ export default function Home() {
     };
 
     return (
-        <div className="relative bg-[#E9ECEF] h-full">
-            <div className="mx-auto max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:px-8">
+        <div className="relative bg-[#E9ECEF] md:bg-white max-w-3xl mx-auto md:p-10">
+            <div className="mx-auto  sm:px-6  lg:max-w-7xl  lg:px-8">
                 <div className="h-1/4">
                     <img
                         src={'sara.svg'}
                         alt={'sara'}
-                        className="max-h-[400px] w-full object-cover object-right-top"
+                        className="h-full w-full object-cover object-right-top"
                     />
                 </div>
             </div>
 
-            <div className={'rounded-xl w-full bg-[#E9ECEF] absolute -mt-10 h-5/4'}>
+            <div className={'rounded-xl w-full bg-[#E9ECEF] md:bg-white absolute md:relative -mt-3'}>
                 <div className="mx-auto max-w-2xl p-8">
-                    <div
-                        className="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8 flex items-center justify-between">
+                    <div className="flex items-center justify-between">
                         <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Sara Hoxha</h1>
                         <svg
                             width="20"
@@ -40,7 +39,6 @@ export default function Home() {
                                 fill={isFavorite ? "#AF63FF" : "gray"} fillRule="evenodd"
                                 clipRule="evenodd"></path>
                         </svg>
-
                     </div>
                 </div>
                 <Link href="/influencer/category">
