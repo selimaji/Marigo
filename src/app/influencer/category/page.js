@@ -52,7 +52,7 @@ export default function Home() {
                                       fill="#212529"/>
                             </svg>
                         </div>
-                        <div className="flex justify-between gap-2 ">
+                        <div className="flex justify-between gap-1 w-full">
                             <img
                                 className=" w-1/3 h-[140px] object-cover"
                                 src="rectangle-620.png"
@@ -79,7 +79,7 @@ export default function Home() {
                                       fill="#212529"/>
                             </svg>
                         </div>
-                        <div className="flex justify-between gap-2 ">
+                        <div className="flex justify-between gap-1 w-full">
                             <img
                                 className=" w-1/3 h-[140px] object-cover"
                                 src="rectangle-620.png"
@@ -106,7 +106,7 @@ export default function Home() {
                                       fill="#212529"/>
                             </svg>
                         </div>
-                        <div className="flex justify-between gap-2 ">
+                        <div className="flex justify-between gap-1 w-full">
                             <img
                                 className=" w-1/3 h-[140px] object-cover"
                                 src="rectangle-620.png"

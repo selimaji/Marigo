@@ -54,13 +54,13 @@ export default function Home() {
                                           fill="#212529"/>
                                 </svg>
                             </div>
-                            <div className="flex justify-between  gap-2 ">
+                            <div className="flex justify-between gap-1 w-full">
                                 <img
-                                    className=" w-1/3 h-[140px] object-cover"
+                                    className="w-1/3 h-[140px] object-cover"
                                     src="rectangle-620.png"
                                 />
                                 <img
-                                    className=" w-1/3 h-[140px] object-cover"
+                                    className="w-1/3 h-[140px] object-cover"
                                     src="rectangle-630.png"
                                 />
                                 <img
@@ -74,7 +74,6 @@ export default function Home() {
                 <Link href="/influencer/category">
                     <div className={"mx-auto max-w-2xl p-6"}>
                         <div className="bg-[#E9ECEF] p-3 rounded-md">
-
                             <div className="flex items-center justify-between mb-2">
                                 <p>Self cltv</p>
                                 <svg width="15" height="15" viewBox="0 0 15 16" fill="none"
@@ -84,8 +83,7 @@ export default function Home() {
                                           fill="#212529"/>
                                 </svg>
                             </div>
-                            <div className="flex justify-between  gap-2 ">
-
+                            <div className="flex justify-between gap-1 w-full">
                                 <img
                                     className=" w-1/3 h-[140px] object-cover"
                                     src="rectangle-620.png"
