@@ -9,7 +9,7 @@ export default function Home() {
     };
 
     return (
-        <div className="relative bg-[#E9ECEF] md:bg-white max-w-3xl mx-auto md:p-10">
+        <div className="relative  max-w-3xl mx-auto md:p-10">
             <div className="mx-auto  sm:px-6  lg:max-w-7xl  lg:px-8">
                 <div className="h-1/4">
                     <img
@@ -20,7 +20,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className={'rounded-xl w-full bg-[#E9ECEF] md:bg-white absolute md:relative -mt-3'}>
+            <div className={'rounded-xl w-full bg-white absolute md:relative -mt-5'}>
                 <div className="mx-auto max-w-2xl p-8">
                     <div className="flex items-center justify-between">
                         <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Sara Hoxha</h1>
@@ -41,58 +41,64 @@ export default function Home() {
                         </svg>
                     </div>
                 </div>
+
                 <Link href="/influencer/category">
-                    <div className={"mx-auto max-w-2xl pt-3 p-8"}>
-                        <div className="flex items-center justify-between mb-2">
-                            <p>Preloved items</p>
-                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path fillRule="evenodd" clipRule="evenodd"
-                                      d="M10.6445 7.6678C10.6881 7.71134 10.7227 7.76307 10.7464 7.82002C10.77 7.87697 10.7822 7.93802 10.7822 7.99968C10.7822 8.06133 10.77 8.12238 10.7464 8.17933C10.7227 8.23628 10.6881 8.28801 10.6445 8.33155L5.01945 13.9566C4.93143 14.0446 4.81206 14.094 4.68758 14.094C4.5631 14.094 4.44372 14.0446 4.3557 13.9566C4.26768 13.8685 4.21824 13.7492 4.21824 13.6247C4.21824 13.5002 4.26768 13.3808 4.3557 13.2928L9.64977 7.99968L4.3557 2.70655C4.26768 2.61853 4.21824 2.49915 4.21824 2.37468C4.21824 2.2502 4.26768 2.13082 4.3557 2.0428C4.44372 1.95478 4.5631 1.90533 4.68758 1.90533C4.81206 1.90533 4.93143 1.95478 5.01945 2.0428L10.6445 7.6678Z"
-                                      fill="#212529"/>
-                            </svg>
+                    <div className={"mx-auto max-w-2xl p-6"}>
+                        <div className="bg-[#E9ECEF] p-3 rounded-md">
+                            <div className="flex items-center justify-between mb-2">
+                                <p>Preloved items</p>
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path fillRule="evenodd" clipRule="evenodd"
+                                          d="M10.6445 7.6678C10.6881 7.71134 10.7227 7.76307 10.7464 7.82002C10.77 7.87697 10.7822 7.93802 10.7822 7.99968C10.7822 8.06133 10.77 8.12238 10.7464 8.17933C10.7227 8.23628 10.6881 8.28801 10.6445 8.33155L5.01945 13.9566C4.93143 14.0446 4.81206 14.094 4.68758 14.094C4.5631 14.094 4.44372 14.0446 4.3557 13.9566C4.26768 13.8685 4.21824 13.7492 4.21824 13.6247C4.21824 13.5002 4.26768 13.3808 4.3557 13.2928L9.64977 7.99968L4.3557 2.70655C4.26768 2.61853 4.21824 2.49915 4.21824 2.37468C4.21824 2.2502 4.26768 2.13082 4.3557 2.0428C4.44372 1.95478 4.5631 1.90533 4.68758 1.90533C4.81206 1.90533 4.93143 1.95478 5.01945 2.0428L10.6445 7.6678Z"
+                                          fill="#212529"/>
+                                </svg>
+                            </div>
+                            <div className="flex justify-between  gap-2 ">
+                                <img
+                                    className=" w-1/3 h-[140px] object-cover"
+                                    src="rectangle-620.png"
+                                />
+                                <img
+                                    className=" w-1/3 h-[140px] object-cover"
+                                    src="rectangle-630.png"
+                                />
+                                <img
+                                    className="w-1/3 h-[140px] object-cover"
+                                    src="rectangle-640.png"
+                                />
+                            </div>
                         </div>
-                        <div className="flex justify-between  gap-2 ">
-                            <img
-                                className=" w-1/3 h-[140px] object-cover"
-                                src="rectangle-620.png"
-                            />
-                            <img
-                                className=" w-1/3 h-[140px] object-cover"
-                                src="rectangle-630.png"
-                            />
-                            <img
-                                className="w-1/3 h-[140px] object-cover"
-                                src="rectangle-640.png"
-                            />
                         </div>
-                    </div>
                 </Link>
                 <Link href="/influencer/category">
-                    <div className={"mx-auto max-w-2xl p-8"}>
-                        <div className="flex items-center justify-between mb-2">
-                            <p>Self cltv</p>
-                            <svg width="15" height="15" viewBox="0 0 15 16" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path fillRule="evenodd" clipRule="evenodd"
-                                      d="M10.6445 7.6678C10.6881 7.71134 10.7227 7.76307 10.7464 7.82002C10.77 7.87697 10.7822 7.93802 10.7822 7.99968C10.7822 8.06133 10.77 8.12238 10.7464 8.17933C10.7227 8.23628 10.6881 8.28801 10.6445 8.33155L5.01945 13.9566C4.93143 14.0446 4.81206 14.094 4.68758 14.094C4.5631 14.094 4.44372 14.0446 4.3557 13.9566C4.26768 13.8685 4.21824 13.7492 4.21824 13.6247C4.21824 13.5002 4.26768 13.3808 4.3557 13.2928L9.64977 7.99968L4.3557 2.70655C4.26768 2.61853 4.21824 2.49915 4.21824 2.37468C4.21824 2.2502 4.26768 2.13082 4.3557 2.0428C4.44372 1.95478 4.5631 1.90533 4.68758 1.90533C4.81206 1.90533 4.93143 1.95478 5.01945 2.0428L10.6445 7.6678Z"
-                                      fill="#212529"/>
-                            </svg>
-                        </div>
-                        <div className="flex justify-between  gap-2 ">
+                    <div className={"mx-auto max-w-2xl p-6"}>
+                        <div className="bg-[#E9ECEF] p-3 rounded-md">
 
-                            <img
-                                className=" w-1/3 h-[140px] object-cover"
-                                src="rectangle-620.png"
-                            />
-                            <img
-                                className=" w-1/3 h-[140px] object-cover"
-                                src="rectangle-630.png"
-                            />
-                            <img
-                                className="w-1/3 h-[140px] object-cover"
-                                src="rectangle-640.png"
-                            />
+                            <div className="flex items-center justify-between mb-2">
+                                <p>Self cltv</p>
+                                <svg width="15" height="15" viewBox="0 0 15 16" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path fillRule="evenodd" clipRule="evenodd"
+                                          d="M10.6445 7.6678C10.6881 7.71134 10.7227 7.76307 10.7464 7.82002C10.77 7.87697 10.7822 7.93802 10.7822 7.99968C10.7822 8.06133 10.77 8.12238 10.7464 8.17933C10.7227 8.23628 10.6881 8.28801 10.6445 8.33155L5.01945 13.9566C4.93143 14.0446 4.81206 14.094 4.68758 14.094C4.5631 14.094 4.44372 14.0446 4.3557 13.9566C4.26768 13.8685 4.21824 13.7492 4.21824 13.6247C4.21824 13.5002 4.26768 13.3808 4.3557 13.2928L9.64977 7.99968L4.3557 2.70655C4.26768 2.61853 4.21824 2.49915 4.21824 2.37468C4.21824 2.2502 4.26768 2.13082 4.3557 2.0428C4.44372 1.95478 4.5631 1.90533 4.68758 1.90533C4.81206 1.90533 4.93143 1.95478 5.01945 2.0428L10.6445 7.6678Z"
+                                          fill="#212529"/>
+                                </svg>
+                            </div>
+                            <div className="flex justify-between  gap-2 ">
+
+                                <img
+                                    className=" w-1/3 h-[140px] object-cover"
+                                    src="rectangle-620.png"
+                                />
+                                <img
+                                    className=" w-1/3 h-[140px] object-cover"
+                                    src="rectangle-630.png"
+                                />
+                                <img
+                                    className="w-1/3 h-[140px] object-cover"
+                                    src="rectangle-640.png"
+                                />
+                            </div>
                         </div>
                     </div>
                 </Link>
