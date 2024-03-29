@@ -108,7 +108,7 @@ export default function Products(props) {
                             <div className="mt-4 flex justify-between">
                                 <div>
                                     <h3 className="text-sm text-gray-700">
-                                        <Link href={product.href}>
+                                        <Link href={`/${props.params.slug}/${props.params.category}/${props.params.products}/${product.href}`}>
                                             <span aria-hidden="true" className="absolute inset-0"/>
                                             {product.name}
                                         </Link>

@@ -95,7 +95,7 @@ export const influencers = [
                 fullName: "Illyrian Bloodline",
                 subcategory: [
                     {
-                        name: "Pants",
+                        name: "pants",
                         fullName: "Pants",
                         img:['pants-white.webp','pants-black.webp','pants-gray.webp'],
                         products:[
