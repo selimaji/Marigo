@@ -1,5 +1,4 @@
 'use client'
-// 'use client' is not a valid JavaScript directive, so I removed it.
 import { useState } from 'react';
 import Heart from "@/components/Heart";
 import Category from "@/components/Category";
