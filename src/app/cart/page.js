@@ -1,59 +1,32 @@
 'use client'
 import React, { useState } from 'react';
-import {Button} from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
+import { influencers } from "@/constants";
+import CartItem from "@/components/CartItem";
 
-function CartItem({ id, imageSrc, title, size, price, removeFromCart, updateQuantity }) {
-    const [quantity, setQuantity] = useState(1);
 
-    const decrement = () => {
-        if (quantity > 1) {
-            setQuantity(quantity - 1);
-            updateQuantity(id, quantity - 1);
-        }
-    };
-
-    const increment = () => {
-        setQuantity(quantity + 1);
-        updateQuantity(id, quantity + 1);
-    };
-
-    return (
-        <div className="justify-between mb-6 rounded-lg bg-white p-6 shadow-md sm:flex sm:justify-start">
-            <img src={imageSrc} alt="product-image" className="w-full rounded-lg sm:w-40" />
-            <div className="sm:ml-4 sm:flex sm:w-full sm:justify-between">
-                <div className="mt-5 sm:mt-0">
-                    <h2 className="text-lg font-bold text-gray-900">{title}</h2>
-                    <p className="mt-1 text-xs text-gray-700">{size}</p>
-                </div>
-                <div className="mt-4 flex justify-between sm:space-y-6 sm:mt-0 sm:block sm:space-x-6">
-                    <div className="flex items-center border-gray-100">
-                        <span className="cursor-pointer rounded-l bg-gray-100 py-1 px-3.5 duration-100 hover:bg-blue-500 hover:text-blue-50" onClick={decrement}> - </span>
-                        <input className="h-8 w-8 border bg-white text-center text-xs outline-none" type="text" value={quantity} readOnly />
-                        <span className="cursor-pointer rounded-r bg-gray-100 py-1 px-3 duration-100 hover:bg-blue-500 hover:text-blue-50" onClick={increment}> + </span>
-                    </div>
-                    <div className="flex items-center space-x-4">
-                        <p className="text-sm">{price}</p>
-                        <RemoveItem removeFromCart={() => removeFromCart(id)} />
-                    </div>
-                </div>
-            </div>
-        </div>
-    );
-}
-
-function RemoveItem({ removeFromCart }) {
-    return (
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="h-5 w-5 cursor-pointer duration-150 hover:text-red-500" onClick={removeFromCart}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-    );
-}
+const getProductBasedOnId = influencers.flatMap(influencer =>
+    influencer.categories.flatMap(category =>
+        category.subcategory.flatMap(subcategory =>
+            subcategory.products.filter(product => product.id === 1)
+        )
+    )
+);
 
 function Page(props) {
     const [cartItems, setCartItems] = useState([
-        { id: 1, imageSrc: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80", title: "Nike Air Max 2019", size: "36EU - 4US", price: "259.000 L", quantity: 1 },
-        { id: 2, imageSrc: "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1131&q=80", title: "Nike Air Max 2019", size: "36EU - 4US", price: "259.000 L", quantity: 1 }
+        {
+            id: getProductBasedOnId[0].id,
+            imageSrc: `/${getProductBasedOnId[0].img}`,
+            title: getProductBasedOnId[0].name,
+            size: "M",
+            price: `${getProductBasedOnId[0].price} L`,
+            quantity: 1
+        },
     ]);
+    const subtotal = cartItems.reduce((acc, item) => acc + (parseFloat(item.price) * item.quantity), 0);
+    const shipping = 4.99;
+    const total = subtotal + shipping;
 
     const removeFromCart = (id) => {
         setCartItems(cartItems.filter(item => item.id !== id));
@@ -63,9 +36,6 @@ function Page(props) {
         setCartItems(cartItems.map(item => item.id === id ? { ...item, quantity: newQuantity } : item));
     };
 
-    const subtotal = cartItems.reduce((acc, item) => acc + (parseFloat(item.price) * item.quantity), 0);
-    const shipping = 4.99;
-    const total = subtotal + shipping;
 
     return (
         <div className="h-screen bg-gray-100 pt-20">
@@ -76,7 +46,6 @@ function Page(props) {
                         <CartItem key={item.id} {...item} removeFromCart={removeFromCart} updateQuantity={updateQuantity} />
                     ))}
                 </div>
-
                 {/* Total component */}
                 <div className="mt-6 h-full rounded-lg border bg-white p-6 shadow-md md:mt-0 md:w-1/3">
                     <div className="mb-2 flex justify-between">
@@ -87,7 +56,7 @@ function Page(props) {
                         <p className="text-gray-700">Shipping</p>
                         <p className="text-gray-700">{shipping.toFixed(2)} L</p>
                     </div>
-                    <hr className="my-4"/>
+                    <hr className="my-4" />
                     <div className="flex justify-between">
                         <p className="text-lg font-bold">Total</p>
                         <div className="">
