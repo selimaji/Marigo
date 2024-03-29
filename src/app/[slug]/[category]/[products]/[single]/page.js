@@ -33,6 +33,7 @@ export default function Page(props) {
         setTotalPrice(filteredProducts[0]?.price * counter);
     }, [counter]);
 
+
     const filterProducts = () => {
         let filteredProducts = [];
         influencers.forEach(influencer => {
@@ -41,7 +42,7 @@ export default function Page(props) {
                     if (category.name === props.params.category) {
                         category.subcategory.forEach(subcategory => {
                             if (subcategory.name === props.params.products) {
-                                filteredProducts = subcategory.products.filter(product => product.href === 'pants-black');
+                                filteredProducts = subcategory.products.filter(product => product.href === props.params.single);
                             }
                         });
                     }
@@ -67,7 +68,6 @@ export default function Page(props) {
         setColor(selectedColor);
     };
 
-    console.log(filterProducts()[0].name)
 
     return (
         <>
