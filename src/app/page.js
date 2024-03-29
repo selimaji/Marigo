@@ -27,7 +27,7 @@ export default function Home() {
             </Link>
             <Link href="/alketa-vejsiu">
                 <Button>
-                    bora-zemani
+                    alketa
                 </Button>
             </Link>
         </div>
