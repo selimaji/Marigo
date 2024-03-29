@@ -11,32 +11,77 @@ export const influencers = [
                     {
                         name: "pants",
                         fullName: "Pants",
+                        img:['pants1.jpg','pants2.webp','pants3.webp'],
+                        products:[
+                            {
+                                name:'Pants White',
+                                price:100,
+                                img:'pants1.jpg',
+                                href:'pants-white'
+                            },
+                            {
+                                name:'Pants Black',
+                                price:200,
+                                img:'pants2.webp',
+                                href:'pants-black'
+                            },
+                            {
+                                name:'Pants Gray',
+                                price:300,
+                                img:'pants3.webp',
+                                href:'pants-gray'
+                            },
+                        ]
                     },
                     {
                         name: "blazzers",
                         fullName: "Blazzers",
+                        img:['blazer1.webp','blazer2.jpg','blazer3.webp'],
+                        products:[
+                            {
+                                name:'Blazer White',
+                                price:100,
+                                img:'blazer1.webp',
+                                href:'blazer-white'
+                            },
+                            {
+                                name:'Blazer Black',
+                                price:200,
+                                img:'blazer2.jpg',
+                                href:'blazer-black'
+                            },
+                            {
+                                name:'Blazer Gray',
+                                price:300,
+                                img:'blazer3.webp',
+                                href:'blazer-gray'
+                            },
+                        ]
                     },
                     {
                         name: "skirts",
                         fullName: "Skirts",
-                    },
-                ]
-            },
-            {
-                name: "self-cltv",
-                fullName: "Self cltv",
-                subcategory: [
-                    {
-                        name: "pants",
-                        fullName: "Pants",
-                    },
-                    {
-                        name: "blazzers",
-                        fullName: "Blazzers",
-                    },
-                    {
-                        name: "skirts",
-                        fullName: "Skirts",
+                        img:['skirts1.jpg','skirts2.webp','skirts3.jpg'],
+                        products:[
+                            {
+                                name:'Skirts White',
+                                price:100,
+                                img:'skirts1.jpg',
+                                href:'skirts-white'
+                            },
+                            {
+                                name:'Skirts Black',
+                                price:200,
+                                img:'skirts2.webp',
+                                href:'skirts-black'
+                            },
+                            {
+                                name:'Skirts Gray',
+                                price:300,
+                                img:'skirts3.jpg',
+                                href:'skirts-gray'
+                            },
+                        ]
                     },
                 ]
             }
@@ -48,38 +93,83 @@ export const influencers = [
         imageSrc: "/sara.svg",
         categories: [
             {
-                name: "preloved-items",
-                fullName: "Preloved items",
+                name: "items",
+                fullName: "items",
                 subcategory: [
                     {
                         name: "pants",
                         fullName: "Pants",
+                        img:['pants1.jpg','pants2.webp','pants3.webp'],
+                        products:[
+                            {
+                                name:'Pants White',
+                                price:100,
+                                img:'pants1.jpg',
+                                href:'pants-white'
+                            },
+                            {
+                                name:'Pants Black',
+                                price:200,
+                                img:'pants2.webp',
+                                href:'pants-black'
+                            },
+                            {
+                                name:'Pants Gray',
+                                price:300,
+                                img:'pants3.webp',
+                                href:'pants-gray'
+                            },
+                        ]
                     },
                     {
                         name: "blazzers",
                         fullName: "Blazzers",
+                        img:['blazer1.webp','blazer2.jpg','blazer3.webp'],
+                        products:[
+                            {
+                                name:'Blazer White',
+                                price:100,
+                                img:'blazer1.webp',
+                                href:'blazer-white'
+                            },
+                            {
+                                name:'Blazer Black',
+                                price:200,
+                                img:'blazer2.jpg',
+                                href:'blazer-black'
+                            },
+                            {
+                                name:'Blazer Gray',
+                                price:300,
+                                img:'blazer3.webp',
+                                href:'blazer-gray'
+                            },
+                        ]
                     },
                     {
                         name: "skirts",
                         fullName: "Skirts",
-                    },
-                ]
-            },
-            {
-                name: "self-cltv",
-                fullName: "Self cltv",
-                subcategory: [
-                    {
-                        name: "pants",
-                        fullName: "Pants",
-                    },
-                    {
-                        name: "blazzers",
-                        fullName: "Blazzers",
-                    },
-                    {
-                        name: "skirts",
-                        fullName: "Skirts",
+                        img:['skirts1.jpg','skirts2.webp','skirts3.jpg'],
+                        products:[
+                            {
+                                name:'Skirts White',
+                                price:100,
+                                img:'skirts1.jpg',
+                                href:'skirts-white'
+                            },
+                            {
+                                name:'Skirts Black',
+                                price:200,
+                                img:'skirts2.webp',
+                                href:'skirts-black'
+                            },
+                            {
+                                name:'Skirts Gray',
+                                price:300,
+                                img:'skirts3.jpg',
+                                href:'skirts-gray'
+                            },
+                        ]
                     },
                 ]
             }
@@ -147,14 +237,77 @@ export const influencers = [
                     {
                         name: "pants",
                         fullName: "Pants",
+                        img:['pants1.jpg','pants2.webp','pants3.webp'],
+                        products:[
+                            {
+                                name:'Pants White',
+                                price:100,
+                                img:'pants1.jpg',
+                                href:'pants-white'
+                            },
+                            {
+                                name:'Pants Black',
+                                price:200,
+                                img:'pants2.webp',
+                                href:'pants-black'
+                            },
+                            {
+                                name:'Pants Gray',
+                                price:300,
+                                img:'pants3.webp',
+                                href:'pants-gray'
+                            },
+                        ]
                     },
                     {
                         name: "blazzers",
                         fullName: "Blazzers",
+                        img:['blazer1.webp','blazer2.jpg','blazer3.webp'],
+                        products:[
+                            {
+                                name:'Blazer White',
+                                price:100,
+                                img:'blazer1.webp',
+                                href:'blazer-white'
+                            },
+                            {
+                                name:'Blazer Black',
+                                price:200,
+                                img:'blazer2.jpg',
+                                href:'blazer-black'
+                            },
+                            {
+                                name:'Blazer Gray',
+                                price:300,
+                                img:'blazer3.webp',
+                                href:'blazer-gray'
+                            },
+                        ]
                     },
                     {
                         name: "skirts",
                         fullName: "Skirts",
+                        img:['skirts1.jpg','skirts2.webp','skirts3.jpg'],
+                        products:[
+                            {
+                                name:'Skirts White',
+                                price:100,
+                                img:'skirts1.jpg',
+                                href:'skirts-white'
+                            },
+                            {
+                                name:'Skirts Black',
+                                price:200,
+                                img:'skirts2.webp',
+                                href:'skirts-black'
+                            },
+                            {
+                                name:'Skirts Gray',
+                                price:300,
+                                img:'skirts3.jpg',
+                                href:'skirts-gray'
+                            },
+                        ]
                     },
                 ]
             }
@@ -166,23 +319,87 @@ export const influencers = [
         imageSrc: "/bora.svg",
         categories: [
             {
-                name: "preloved-items",
-                fullName: "Preloved items",
+                name: "bzzz",
+                fullName: "Bzzz",
                 subcategory: [
                     {
                         name: "pants",
                         fullName: "Pants",
+                        img:['pants1.jpg','pants2.webp','pants3.webp'],
+                        products:[
+                            {
+                                name:'Pants White',
+                                price:100,
+                                img:'pants1.jpg',
+                                href:'pants-white'
+                            },
+                            {
+                                name:'Pants Black',
+                                price:200,
+                                img:'pants2.webp',
+                                href:'pants-black'
+                            },
+                            {
+                                name:'Pants Gray',
+                                price:300,
+                                img:'pants3.webp',
+                                href:'pants-gray'
+                            },
+                        ]
                     },
                     {
                         name: "blazzers",
                         fullName: "Blazzers",
+                        img:['blazer1.webp','blazer2.jpg','blazer3.webp'],
+                        products:[
+                            {
+                                name:'Blazer White',
+                                price:100,
+                                img:'blazer1.webp',
+                                href:'blazer-white'
+                            },
+                            {
+                                name:'Blazer Black',
+                                price:200,
+                                img:'blazer2.jpg',
+                                href:'blazer-black'
+                            },
+                            {
+                                name:'Blazer Gray',
+                                price:300,
+                                img:'blazer3.webp',
+                                href:'blazer-gray'
+                            },
+                        ]
                     },
                     {
                         name: "skirts",
                         fullName: "Skirts",
+                        img:['skirts1.jpg','skirts2.webp','skirts3.jpg'],
+                        products:[
+                            {
+                                name:'Skirts White',
+                                price:100,
+                                img:'skirts1.jpg',
+                                href:'skirts-white'
+                            },
+                            {
+                                name:'Skirts Black',
+                                price:200,
+                                img:'skirts2.webp',
+                                href:'skirts-black'
+                            },
+                            {
+                                name:'Skirts Gray',
+                                price:300,
+                                img:'skirts3.jpg',
+                                href:'skirts-gray'
+                            },
+                        ]
                     },
                 ]
             }
+
         ]
     },
 ];
