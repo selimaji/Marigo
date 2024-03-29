@@ -1,7 +1,6 @@
 'use client'
 import { useEffect, useState } from 'react';
 import { CarouselItem, CarouselNext, CarouselPrevious, CarouselContent, Carousel } from '@/components/ui/carousel';
-import Image from 'next/image';
 import { HeartIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbSeparator } from "@/components/ui/breadcrumb";

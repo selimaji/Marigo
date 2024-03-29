@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import {Button} from "@/components/ui/button";
 
-// Item component
 function CartItem({ id, imageSrc, title, size, price, removeFromCart, updateQuantity }) {
     const [quantity, setQuantity] = useState(1);
 
@@ -42,7 +41,6 @@ function CartItem({ id, imageSrc, title, size, price, removeFromCart, updateQuan
     );
 }
 
-// Remove item component
 function RemoveItem({ removeFromCart }) {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="h-5 w-5 cursor-pointer duration-150 hover:text-red-500" onClick={removeFromCart}>
@@ -51,7 +49,6 @@ function RemoveItem({ removeFromCart }) {
     );
 }
 
-// Main page component
 function Page(props) {
     const [cartItems, setCartItems] = useState([
         { id: 1, imageSrc: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80", title: "Nike Air Max 2019", size: "36EU - 4US", price: "259.000 L", quantity: 1 },
