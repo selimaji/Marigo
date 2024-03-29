@@ -90,7 +90,7 @@ export const influencers = [
     {
         name: "sara-berisha",
         fullName: "Sara Berisha",
-        imageSrc: "/sara.svg",
+        imageSrc: "/sara-berisha.jpg",
         categories: [
             {
                 name: "items",
@@ -266,7 +266,7 @@ export const influencers = [
     {
         name: "alketa-vejsiu",
         fullName: "Alketa Vejsiu",
-        imageSrc: "/sara.svg",
+        imageSrc: "/alketa.jpeg",
         categories: [
             {
                 name: "preloved-items",
@@ -354,7 +354,7 @@ export const influencers = [
     {
         name: "bora-zemani",
         fullName: "Bora Zemani",
-        imageSrc: "/bora.svg",
+        imageSrc: "/bora-zemani.jpeg",
         categories: [
             {
                 name: "bzzz",
