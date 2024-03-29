@@ -212,14 +212,52 @@ export const influencers = [
                     {
                         name: "T-shirt",
                         fullName: "T-shirt",
-                        img:['pants-white1.webp','pants-black.webp','pants-gray.webp']
-
+                        img:['tshirt1.webp','tshirt2.webp','tshirt13.webp'],
+                        products:[
+                            {
+                                name:'T-shirt',
+                                price:100,
+                                img:'tshirt1.webp',
+                                href:'pants-white'
+                            },
+                            {
+                                name:'T-shirt',
+                                price:200,
+                                img:'tshirt2.webp',
+                                href:'pants-black'
+                            },
+                            {
+                                name:'T-shirt',
+                                price:300,
+                                img:'tshirt3.webp',
+                                href:'pants-gray'
+                            },
+                        ]
                     },
                     {
                         name: "Shorts",
                         fullName: "Shorts",
-                        img:['pants-white.webp2','pants-black.webp','pants-gray.webp']
-
+                        img:['shorts1.webp2','shorts2.webp','shorts3.webp'],
+                        products:[
+                            {
+                                name:'Pants White',
+                                price:100,
+                                img:'shorts1.webp',
+                                href:'pants-white'
+                            },
+                            {
+                                name:'Pants Black',
+                                price:200,
+                                img:'shorts2.webp',
+                                href:'pants-black'
+                            },
+                            {
+                                name:'Pants Gray',
+                                price:300,
+                                img:'shorts3.webp',
+                                href:'pants-gray'
+                            },
+                        ]
                     }
                 ]
             }
