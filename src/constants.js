@@ -99,21 +99,24 @@ export const influencers = [
                         fullName: "Pants",
                         img:['pants-white.webp','pants-black.webp','pants-gray.webp'],
                         products:[
-                            // {
-                            //     name:'Pants White',
-                            //     price:100,
-                            //     img:'pants-white.webp'
-                            // },
-                            // {
-                            //     name:'Pants Black',
-                            //     price:200,
-                            //     img:'pants-black.webp'
-                            // },
-                            // {
-                            //     name:'Pants Gray',
-                            //     price:300,
-                            //     img:'pants-gray.webp'
-                            // },
+                            {
+                                name:'Pants White',
+                                price:100,
+                                img:'pants-white.webp',
+                                href:'pants-white'
+                            },
+                            {
+                                name:'Pants Black',
+                                price:200,
+                                img:'pants-black.webp',
+                                href:'pants-black'
+                            },
+                            {
+                                name:'Pants Gray',
+                                price:300,
+                                img:'pants-gray.webp',
+                                href:'pants-gray'
+                            },
                         ]
                     },
                     {

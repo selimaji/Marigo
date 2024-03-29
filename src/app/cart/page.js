@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from 'react';
+import {Button} from "@/components/ui/button";
 
 // Item component
 function CartItem({ id, imageSrc, title, size, price, removeFromCart, updateQuantity }) {
@@ -28,7 +29,7 @@ function CartItem({ id, imageSrc, title, size, price, removeFromCart, updateQuan
                 <div className="mt-4 flex justify-between sm:space-y-6 sm:mt-0 sm:block sm:space-x-6">
                     <div className="flex items-center border-gray-100">
                         <span className="cursor-pointer rounded-l bg-gray-100 py-1 px-3.5 duration-100 hover:bg-blue-500 hover:text-blue-50" onClick={decrement}> - </span>
-                        <input className="h-8 w-8 border bg-white text-center text-xs outline-none" type="number" value={quantity} readOnly />
+                        <input className="h-8 w-8 border bg-white text-center text-xs outline-none" type="text" value={quantity} readOnly />
                         <span className="cursor-pointer rounded-r bg-gray-100 py-1 px-3 duration-100 hover:bg-blue-500 hover:text-blue-50" onClick={increment}> + </span>
                     </div>
                     <div className="flex items-center space-x-4">
@@ -83,20 +84,22 @@ function Page(props) {
                 <div className="mt-6 h-full rounded-lg border bg-white p-6 shadow-md md:mt-0 md:w-1/3">
                     <div className="mb-2 flex justify-between">
                         <p className="text-gray-700">Subtotal</p>
-                        <p className="text-gray-700">${subtotal.toFixed(2)}</p>
+                        <p className="text-gray-700">{subtotal.toFixed(2)} L</p>
                     </div>
                     <div className="flex justify-between">
                         <p className="text-gray-700">Shipping</p>
-                        <p className="text-gray-700">${shipping.toFixed(2)}</p>
+                        <p className="text-gray-700">{shipping.toFixed(2)} L</p>
                     </div>
                     <hr className="my-4"/>
                     <div className="flex justify-between">
                         <p className="text-lg font-bold">Total</p>
                         <div className="">
-                            <p className="mb-1 text-lg font-bold">${total.toFixed(2)} L</p>
+                            <p className="mb-1 text-lg font-bold">{total.toFixed(2)} L</p>
                         </div>
                     </div>
-                    <button className="mt-6 w-full rounded-md bg-blue-500 py-1.5 font-medium text-blue-50 hover:bg-blue-600">Check out</button>
+                    <Button className="mt-6 w-full rounded-md bg-[#212529] py-1.5 font-medium text-blue-50 hover:bg-blue-600">
+                        Check out
+                    </Button>
                 </div>
             </div>
         </div>

@@ -42,7 +42,7 @@ export default function Home(props) {
                         {category.subcategory.map((sub, subIndex) => (
                             <Category key={index}
                                       title={sub.fullName}
-                                      subcategoryImg={sub}
+                                      subcategoryImg={sub.img}
                                       href={`/${props.params.slug}/${category.name}/${sub.name}/`} />
                         ))}
                     </div>

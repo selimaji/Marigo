@@ -151,9 +151,11 @@ export default function Page() {
                                 </div>
                                 <p className="text-2xl font-semibold">Total: {counter * 100}$</p>
                             </div>
-                            <Button
-                                className="w-full py-6 bg-[#212529] -translate-y-2 lg:rounded-2xl lg:translate-y-0 lg:py-6 text-xl">Add
-                                to Card</Button>
+                            <Link href={'/cart'} className={'w-full'}>
+                                <Button className="w-full py-6 bg-[#212529] -translate-y-2 lg:rounded-2xl lg:translate-y-0 lg:py-6 text-xl">
+                                    Add to Card
+                                </Button>
+                            </Link>
                         </div>
                     </div>
                 </div>

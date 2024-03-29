@@ -5,51 +5,12 @@ import {
     BreadcrumbItem,
     BreadcrumbLink,
     BreadcrumbList,
-    BreadcrumbPage,
     BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
 import Link from "next/link";
 import {cn} from "@/lib/utils";
+import {influencers} from "@/constants";
 
-
-const products = [
-    {
-        id: 1,
-        name: 'Basic Tee',
-        href: '/influencer/category/products/single-product',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
-        imageAlt: "Front of men's Basic Tee in black.",
-        price: '$35',
-        color: 'Black',
-    },
-    {
-        id: 2,
-        name: 'Basic Tee 2',
-        href: '/influencer/category/products/single-product',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-02.jpg',
-        imageAlt: "Front of men's Basic Tee in black.",
-        price: '123',
-        color: 'Black',
-    },
-    {
-        id: 3,
-        name: 'Basic Tee 3',
-        href: '/influencer/category/products/single-product',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-03.jpg',
-        imageAlt: "Front of men's Basic Tee in black.",
-        price: '1',
-        color: 'Black',
-    },
-    {
-        id: 4,
-        name: 'Basic Tee 4',
-        href: '/influencer/category/products/single-product',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-04.jpg',
-        imageAlt: "Front of men's Basic Tee in black.",
-        price: '2',
-        color: 'Black',
-    },
-]
 
 export default function Products(props) {
     const [columns, setColumns] = useState(2);
@@ -58,9 +19,24 @@ export default function Products(props) {
         setColumns(col);
     };
 
+    const products = [];
+
+    influencers.forEach(influencer => {
+        if ( influencer.name === props.params.slug) {
+            influencer.categories.forEach(category => {
+                if (category.name === props.params.category) {
+                    category.subcategory.forEach(subcategory => {
+                        if (subcategory.name === props.params.products) {
+                            products.push(...subcategory.products);
+                        }
+                    });
+                }
+            });
+        }
+    });
 
     return (
-        <div className="bg-white">
+        <div className="bg-white py-6">
             <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
                 <div className="flex items-center justify-between py-4">
                     <svg width="20" height="20" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -119,13 +95,13 @@ export default function Products(props) {
                     'grid-cols-1': columns === 1,
                     'grid-cols-2': columns === 2,
                 })}>
-                    {products.map((product) => (
-                        <div key={product.id} className="group relative">
+                    {products.map((product,index) => (
+                        <div key={index} className="group relative">
                             <div
                                 className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
                                 <img
-                                    src={product.imageSrc}
-                                    alt={product.imageAlt}
+                                    src={`/${product.img}`}
+                                    alt={product.img}
                                     className="h-full w-full object-cover object-center"
                                 />
                             </div>
@@ -137,9 +113,8 @@ export default function Products(props) {
                                             {product.name}
                                         </Link>
                                     </h3>
-                                    <p className="mt-1 text-sm text-gray-500">{product.color}</p>
                                 </div>
-                                <p className="text-sm font-medium text-gray-900">{product.price}</p>
+                                <p className="text-sm font-medium text-gray-900">{product.price} L</p>
                             </div>
                         </div>
                     ))}
