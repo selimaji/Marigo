@@ -2,7 +2,6 @@
 import { useState } from 'react';
 import Heart from "@/components/Heart";
 import Category from "@/components/Category";
-import Image from 'next/image';
 import { influencers } from "@/constants";
 
 export default function Home(props) {
