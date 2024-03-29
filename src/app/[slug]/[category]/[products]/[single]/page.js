@@ -91,7 +91,7 @@ export default function Page(props) {
                         <CarouselContent className="lg:flex lg:items-center">
                             {[1, 2, 3, 4, 5].map((element, index) => (
                                 <CarouselItem key={index} className="flex items-center justify-center sm:basis-full md:basis-1/3 lg:basis-full">
-                                    <img className="object-contain w-full md:w-full lg:w-2/3"
+                                    <img className="md:max-h-[500px] object-contain w-full md:w-full lg:w-2/3"
                                          src={`/${filterProducts()[0].img}`}
                                          alt={`/${filterProducts()[0].name}`}/>
                                 </CarouselItem>
