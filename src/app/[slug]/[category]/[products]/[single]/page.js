@@ -146,7 +146,7 @@ export default function Page(props) {
                                 </div>
                                 <p className="text-2xl font-semibold">Total: {totalPrice} L</p>
                             </div>
-                            <Link href={`/cart?product=${filterProducts()[0].id}`} className={'w-full'}>
+                            <Link href={`/payment?quantity=${counter}&id=${filterProducts()[0].id}`}>
                                 <Button className="w-full py-6 bg-[#212529] -translate-y-2 lg:rounded-2xl lg:translate-y-0 lg:py-6 text-xl">Add to Cart</Button>
                             </Link>
                         </div>
