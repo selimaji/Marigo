@@ -218,19 +218,19 @@ export const influencers = [
                                 name:'T-shirt',
                                 price:100,
                                 img:'tshirt1.webp',
-                                href:'pants-white'
+                                href:'tshirt-white'
                             },
                             {
                                 name:'T-shirt',
                                 price:200,
                                 img:'tshirt2.webp',
-                                href:'pants-black'
+                                href:'tshirt-black'
                             },
                             {
                                 name:'T-shirt',
                                 price:300,
                                 img:'tshirt3.webp',
-                                href:'pants-gray'
+                                href:'tshirt-gray'
                             },
                         ]
                     },
@@ -243,19 +243,19 @@ export const influencers = [
                                 name:'Pants White',
                                 price:100,
                                 img:'shorts1.webp',
-                                href:'pants-white'
+                                href:'shorts-white'
                             },
                             {
                                 name:'Pants Black',
                                 price:200,
                                 img:'shorts2.webp',
-                                href:'pants-black'
+                                href:'shorts-black'
                             },
                             {
                                 name:'Pants Gray',
                                 price:300,
                                 img:'shorts3.webp',
-                                href:'pants-gray'
+                                href:'shorts-gray'
                             },
                         ]
                     }
