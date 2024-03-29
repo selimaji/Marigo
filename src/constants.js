@@ -212,7 +212,7 @@ export const influencers = [
                     {
                         name: "T-shirt",
                         fullName: "T-shirt",
-                        img:['tshirt1.webp','tshirt2.webp','tshirt13.webp'],
+                        img:['tshirt1.webp','tshirt2.webp','tshirt3.webp'],
                         products:[
                             {
                                 name:'T-shirt',
@@ -237,22 +237,22 @@ export const influencers = [
                     {
                         name: "Shorts",
                         fullName: "Shorts",
-                        img:['shorts1.webp2','shorts2.webp','shorts3.webp'],
+                        img:['shorts1.webp','shorts2.webp','shorts3.webp'],
                         products:[
                             {
-                                name:'Pants White',
+                                name:'Shorts White',
                                 price:100,
                                 img:'shorts1.webp',
                                 href:'shorts-white'
                             },
                             {
-                                name:'Pants Black',
+                                name:'Shorts Black',
                                 price:200,
                                 img:'shorts2.webp',
                                 href:'shorts-black'
                             },
                             {
-                                name:'Pants Gray',
+                                name:'Shorts Gray',
                                 price:300,
                                 img:'shorts3.webp',
                                 href:'shorts-gray'
